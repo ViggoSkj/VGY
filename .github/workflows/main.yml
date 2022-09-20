@@ -15,5 +15,5 @@ jobs:
         server: 193.44.147.188
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
-        protocol: ftps
+        protocol: ftps-legacy
         server-dir: /public_html/
