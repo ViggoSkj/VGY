@@ -16,6 +16,6 @@ jobs:
             server: 193.44.147.188
             port: 21
             local_path: /
-            remote_path: ./public_html/
+            remote_path: /public_html/
             sftp_only: true
             password: ${{ secrets.FTP_PASSWORD }}
