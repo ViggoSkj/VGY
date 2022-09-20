@@ -3,17 +3,18 @@ on:
     branches:
       - main
 jobs:
-  deploy:
-    name: Deploy
+  deploy_job:
     runs-on: ubuntu-latest
+    name: deploy
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.2
-      with:
-        server: 193.44.147.188
-        username: ${{ secrets.FTP_USER }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        protocol: ftps-legacy
-        server-dir: ./public_html/
+        - name: Checkout
+          uses: actions/checkout@v2
+        - name: Deploy file
+          uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+          with:
+            username: ${{ secrets.FTP_USER }}
+            server: 193.44.147.188
+            port: 21
+            local_path: /
+            sftp_only: true
+            password: ${{ secrets.FTP_PASSWORD }}
