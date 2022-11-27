@@ -31,7 +31,7 @@
                     <img src="./public/images/tetris.png" alt="">
                     <p>Snake made in made in a few hours. Only the basic game loop. No score or good looks.</p>
                 </div>
-                <a class="button" href="projects/tetris">Snake Game</a>
+                <a class="button" href="projects/snake">Snake Game</a>
             </div>
 
         </div>

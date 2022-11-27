@@ -15,15 +15,19 @@
 
                 <?php
                     $ovningOptions = [
-                        "Ovning 0" => "ovning0",
-                        "Ovning 1" => "ovning1",
-                        "Ovning 2" => "ovning2",
-                        "Ovning 3" => "ovning3",
-                        "Ovning 4" => "ovning4",
-                        "Ovning 6" => "ovning6",
-                        "Ovning 7" => "ovning7",
-                        "Ovning 8" => "ovning8",
-                        "Ovning 9" => "ovning9",
+                        "Övning 0" => "ovning0",
+                        "Övning 1" => "ovning1",
+                        "Övning 2" => "ovning2",
+                        "Övning 3" => "ovning3",
+                        "Övning 4" => "ovning4",
+                        "Övning 6" => "ovning6",
+                        "Övning 7" => "ovning7",
+                        "Övning 8" => "ovning8",
+                        "Övning 9" => "ovning9",
+                        "Photoshop" => "photoshopovning",
+                        "Övenings Prov E" => "ovningsprove",
+                        "Övenings Prov C" => "ovningsprovc",
+                        "Övenings Prov A" => "ovningsprova",
                     ]  
                 ?>
 
