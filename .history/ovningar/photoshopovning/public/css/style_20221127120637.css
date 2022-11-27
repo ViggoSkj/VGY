@@ -1,0 +1,26 @@
+body
+{
+    background-image: linear-gradient(45deg, gray, black);
+}
+
+.container
+{
+    background-color: beige;
+    margin: auto;
+    margin-top: 8em;
+    width: 80%;
+}
+
+img
+{
+    width: 90%;
+    vertical-align: middle;
+}
+
+.images
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: black;
+    
+}

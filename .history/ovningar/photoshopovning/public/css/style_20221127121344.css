@@ -1,0 +1,40 @@
+body
+{
+    background-image: linear-gradient(45deg, gray, black);
+    display: flex;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container
+{
+    background-color: beige;
+    margin: auto;
+    margin-top: 8em;
+    align-items: center;
+    width: 80%;
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow: 0em 0em 4em 1em black;
+}
+
+img
+{
+
+    width: 30%;
+    border-radius: 1em;
+    padding: 0.5em;
+    background-color: rgba(0, 0, 0, 0.116);
+}
+
+.images
+{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    align-items: center;   
+    padding: 2em;
+    margin: 2em;
+}

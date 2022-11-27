@@ -1,0 +1,92 @@
+body
+{
+    background-color: rgb(23, 22, 24);      
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body.ovning-3 .container {
+    background-color: #ffff99;
+}
+
+body.ovning-3 h1 
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: red;
+}
+
+body.ovning-3 .image-div
+{
+    text-align: center;
+    align-items: center;
+}
+
+body.ovning-3 img
+{
+    border-width: 2px;
+    border-style: solid;
+    color: black;
+} 
+
+body.ovning-3 .bottom
+{
+    display: grid;
+    grid-template-columns: auto 20%  auto;
+}
+
+body.ovning-3 .s
+{
+    margin-right: 100%;
+    width: 50%;
+}
+
+body.ovning-3 .m
+{
+    left: auto;
+    width: 80%;
+}
+
+body.ovning-3 .left
+{
+    text-align: left;
+}
+body.ovning-3 .right
+{
+    text-align: right;
+}
+body.ovning-3 .center
+{
+    text-align: center;
+}
+body.ovning-3 ol
+{
+    list-style-type:lower-latin;
+}
+body.ovning-3 .bg-green {
+    background-color: rgb(0, 255, 0);
+}
+
+body.ovning-3 .spec {
+    background-color: red;
+    font-size: 16px;
+    font-weight: bold;
+} 
+
+body.ovning-3 .kod {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body.ovning-3 strong {
+    font-size: 16px;
+}
+
+body.ovning-3 a {
+    color:#666666;
+    font-size:16px;
+    text-decoration:none;
+    }
+
+body.ovning-3 a:hover {
+    text-decoration:underline overline;
+}

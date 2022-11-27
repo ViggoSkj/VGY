@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(118, 120, 135);
+}
+
+ .container {
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.288);
+}
+
+ .title {
+    text-decoration: underline;
+}
+
+ .sub-title {
+    text-decoration: none;
+    text-align: center;
+}
+
+ .desc {
+    color: rgb(67, 67, 67);
+}
+
+ table {
+    margin: auto;
+    width: 40%;
+}
+
+ td {
+    width: 25%;
+    font-size: 15px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+ .middle {
+    width: 10%;
+    font-size: 15px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+ .text-left {
+    text-align: left;
+}
+
+ .text-right {
+    text-align: right;
+}
+
+ .table-b {
+    width: 70%;
+}
+
+ .table-b td{
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+ .table-b .top{
+    vertical-align: top;
+}
+
+ .table-b .bottom{
+    vertical-align: bottom;
+}
+
+ .table-c {
+    width: 15%;
+    border: 1px;
+    border-style: solid;
+    border-color: gray;
+}
+
+ .table-c td {
+    padding: 40px;
+}
+
+ .r {
+    background-color: red;
+}
+ .g {
+    background-color: green;
+}
+ .b {
+    background-color: blue;
+}
+ .y {
+    background-color: yellow;
+}
+ .bl {
+    background-color: black;
+}
