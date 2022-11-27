@@ -1,0 +1,167 @@
+body
+{
+    font-family: Arial;
+    font-weight: bold;
+    background-color: black;
+    margin: 0;
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.navbar a
+{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.eifel
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: column;
+}
+
+table
+{
+    margin-top: 3em !important;
+    width: 500px;
+    margin: auto;
+    background-color: lightblue;
+    border: 1px solid;
+    padding: 10px;
+    border-spacing: 0;
+}
+
+td
+{
+    background-color: lightyellow;
+    width: 217px;
+    border: 1px solid;
+    padding: 10px;
+}
+
+.td1
+{
+    border-right: black 10px solid;
+}
+
+.td2
+{
+    border-left: black 10px solid;
+}
+
+.tdt
+{
+    border-bottom: black 10px solid;
+}
+
+.text-center
+{
+    text-align: center;
+    font-family: Verdana;
+    color: gray;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+td img 
+{
+    border:  red 5px solid;
+    margin: auto;
+    display: block;
+}
+
+td a img
+{
+    border: 0 !important;
+    margin: 0 !important;
+    display: inline-block !important;
+}
+
+.green 
+{
+    background-color: green;
+}
+
+.namn
+{
+    text-align: end;
+    font-family: "Comic Sans"; /* fins ej */
+    font-size: 24px;
+}
+
+ol
+{
+    list-style-type:lower-roman
+}
+
+ul 
+{
+    list-style-type:square;
+}
+
+.down 
+{
+    vertical-align: bottom;
+}
+
+.right
+{
+    float: right
+}
+
+.container
+{
+    background-color: pink;
+    width: 60%;
+    min-height: 80vh;
+    margin: auto;
+    padding: 1em;
+    padding-top: 0 !important;
+}
+
+.b0 
+{
+    position: relative;
+    left: 5em;
+    top: 1em;
+}
+.b1
+{
+    position: relative;
+    right: 4em;
+    top: 1.5em;
+    z-index: 10;
+}
+.b2 
+{
+    position: relative;
+    right: 5em;
+    top: 2em;
+}
+
+.img-text
+{
+    position: relative;
+    top: 10em;
+    z-index: 10;
+}
+
+.s
+{
+    letter-spacing: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+.s:hover
+{
+    color: red;
+}

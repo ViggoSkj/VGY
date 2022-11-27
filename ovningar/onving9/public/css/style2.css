@@ -1,0 +1,175 @@
+body
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+.structure
+{
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-gap: 3px;
+    
+    padding: 3px;
+    width: 800px;
+    margin: auto;
+    color: white;
+}
+
+.structure
+{
+    animation-name: bg;
+    animation-duration: 1s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes bg
+{
+    0%  {background-color: magenta;} 
+    25% {background-color: blue;}    
+    50% {background-color: magenta}   
+    75% {background-color: blue;}    
+    100% {background-color: magenta;} 
+}
+
+
+@keyframes test
+{
+    0%  {right: -10px;} 
+    25% {right: 0px;}    
+    50% {right: 10px}   
+    75% {right: 0px;}    
+    100% {right: -10px;} 
+}
+
+
+@keyframes test2
+{
+    0%  {top: 0px;} 
+    25% {top: -10px;}    
+    50% {top: 0px}   
+    75% {top: 10px;} 
+    100% {top: 0px;} 
+}
+
+@keyframes color
+{
+    0%  {background-color: black;}  
+    50% {background-color: white;  }   
+    100% {background-color: black;}   
+}
+
+@keyframes color2
+{
+    0%  {color: blue;}  
+    50% {color: violet;  }   
+    100% {color: blue;}   
+}
+
+@keyframes marg
+{
+    0%  {margin: 1em;}  
+    50% {margin: 0em;}   
+    100% {margin: 1em;}   
+}
+
+
+header
+{
+    grid-column: 2 span;
+    background-color: rgb(16, 16, 21);
+    text-align: center;
+    color: white;
+}
+
+
+
+
+aside
+{
+    grid-row: 2 span;
+    background-color: rgb(16, 16, 21);
+    text-align: center;
+}
+.pris
+{
+    border: rgb(255, 0, 162) 1px solid;
+    background-color: rgb(16, 16, 21);
+    margin: 0.5em;
+    padding: 1em;
+}   
+.pris .titel
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+section#sidebar
+{
+    grid-row: 1 span;
+    background-color: rgb(16, 16, 21);
+}
+
+
+
+
+nav
+{
+    border: rgb(255, 0, 162) 1px solid;
+    background-color: rgb(16, 16, 21);
+    margin: 0.5em;
+    padding: 1em;
+}
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+li
+{
+    margin-top: 3px;
+}
+a
+{
+    color: rgb(255, 0, 162);
+}
+a#selected
+{
+    font-weight: bold;
+}
+
+
+
+
+main
+{
+    background-color: white;
+    padding: 1em;
+    color: black;
+}
+
+
+
+
+footer
+{
+    grid-column: 3 span;
+    background-color: rgb(16, 16, 21);
+    text-align: center;
+}
+.big
+{
+    font-size: 2.5em;
+}
+
+img
+{
+    border: black 1px solid;
+    width: 150px;
+}

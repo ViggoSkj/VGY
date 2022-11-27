@@ -1,0 +1,53 @@
+.a-text-box {
+    background-color: black;
+    width: 300px;
+    height: 200px;
+    color: yellow;
+    margin: auto;
+    text-align: center;
+}
+
+.b-box {
+    border: black 1px solid;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+}
+
+.b-bild {
+    width: 100px;
+}
+
+.c-box {
+    border: black 1px dashed;
+    width: 300px;
+    height: 225px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.c-bild {
+    width: 100px;
+    filter: grayscale(100%);
+}
+
+.d-bild {
+    width: 100px;
+    box-shadow: black 7px 7px 5px 5px;
+}
+
+.d-box {
+    border: black 10px dashed;
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
