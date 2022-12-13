@@ -24,6 +24,8 @@
                         "Övning 7" => "ovning7",
                         "Övning 8" => "ovning8",
                         "Övning 9" => "ovning9",
+                        "Övning Meny" => "ovningMeny",
+                        "Övning 11" => "ovning11",
                         "Photoshop" => "photoshopovning",
                         "Övenings Prov E" => "ovningsprove",
                         "Övenings Prov C" => "ovningsprovc",

@@ -1,0 +1,59 @@
+body {
+    background-color: darkgray;
+}
+
+
+form {
+    background-color: white;
+    padding: 1em;
+    width: 300px;
+    margin: auto;
+    margin-top: 3em;
+    position: relative;
+    animation: p 5s infinite alternate-reverse, r 60s infinite alternate-reverse
+}
+
+form h1 {
+    margin: 0;
+}
+
+button {
+    margin: auto;
+    display: block;
+    margin-top: 0.5em;
+}
+
+.thing {
+    position: relative;
+    animation: x 0.5s infinite, y 0.5s infinite;
+}
+
+@keyframes x {
+    0% {right: -1em;}
+    25% {right: 0em;}
+    50% {right: 1em;}
+    75% {right: 0em;}
+    100% {right: -1em;}
+}
+@keyframes y {
+    0% {top: 0em;}
+    25% {top: 1em;}
+    50% {top: 0em;}
+    75% {top: -1em;}
+    100% {top: 0em;}
+}
+
+.skicka {
+    position: relative;
+    animation: p 0.5s infinite alternate-reverse
+}
+
+@keyframes p {
+    from {left: -5em}
+    to {left:5em}
+}
+
+@keyframes r {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}

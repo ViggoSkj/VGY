@@ -1,0 +1,52 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    width: 50%;
+    min-width: 40em;
+    margin: auto;
+    margin-top: 5em;
+    background-color: rgb(87, 87, 87);
+    border: 1px black solid;
+}
+
+nav {
+    padding: 1em;
+    padding-bottom: 0;
+    margin-top: 1em;
+}
+
+nav a {
+    display: inline-block;
+    background-color: black;
+    padding: 1em;
+    color: white;
+    text-decoration: 0;
+    margin-left: 1em;
+    border: 1px solid black;
+    border-bottom-color: transparent;
+}
+
+nav a#current {
+    background-color: white;
+    color: black;
+}
+
+main {
+    background-color: white;
+    padding: 1em;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}

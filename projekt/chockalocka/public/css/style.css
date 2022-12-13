@@ -1,0 +1,51 @@
+body
+{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background-image: linear-gradient(90deg, black 0%, rgb(141, 20, 115) 48.5%, rgb(55, 0, 255) 60%, rgb(105, 255, 240) 100%);
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: min-content;
+    margin: auto;
+}
+
+.content
+{
+    margin: 2em;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0px 0px 1em 0em black;
+}
+
+.content.right
+{
+    background-color: white;
+}
+
+.content.left
+{
+    background-color: rgb(14, 12, 12);
+    color: rgb(206, 206, 206);
+}
+
+img
+{
+    display: block;
+    margin: auto;
+    width: 350px;
+    border-radius: 0.5em;
+}
+
+.author
+{
+    text-align: end;
+    vertical-align:bottom;
+    color: gray;
+}
+

@@ -1,0 +1,253 @@
+body
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    animation: font 2s infinite, space 4s infinite, space-c 6s infinite, underline 0.5s infinite;
+}
+
+@keyframes font
+{
+    0% {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+    20% {font-family: Georgia, 'Times New Roman', Times, serif;}
+    40% {font-family: sans-serif;}
+    60% {font-family:'Courier New', Courier, monospace;}
+    80% {font-family:Verdana, Geneva, Tahoma, sans-serif;}
+    100% {font-family: cursive;}
+}
+
+@keyframes space
+{
+    0%  {word-spacing: 1px;}
+    20% {word-spacing: 3px;}
+    40% {word-spacing: 9px;}
+    60% {word-spacing: 12px;}
+    80% {word-spacing: 15px;}
+    100%{word-spacing: 18px;}
+}
+
+@keyframes space-c
+{
+    0%  {letter-spacing: 1px;}
+    20% {letter-spacing: 2px;}
+    40% {letter-spacing: 3px;}
+    60% {letter-spacing: 4px;}
+    80% {letter-spacing: 5px;}
+    100%{letter-spacing: 6px;}
+}
+
+@keyframes underline
+{
+    from {text-decoration: underline;}
+    to {text-decoration: 0;}
+}
+
+.structure
+{
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-gap: 3px;
+    
+    padding: 3px;
+    width: 800px;
+    margin: auto;
+    color: white;
+    background-color: white;
+}
+
+@keyframes bg
+{
+    0%  {background-color: magenta;} 
+    25% {background-color: blue;}    
+    50% {background-color: magenta}   
+    75% {background-color: blue;}    
+    100% {background-color: magenta;} 
+}
+
+@keyframes border-color
+{
+    0%  {border-color: magenta;} 
+    25% {border-color: blue;}    
+    50% {border-color: magenta}   
+    75% {border-color: blue;}    
+    100% {border-color: magenta;} 
+}
+
+
+@keyframes test
+{
+    0%  {right: -10px;} 
+    25% {right: 0px;}    
+    50% {right: 10px}   
+    75% {right: 0px;}    
+    100% {right: -10px;} 
+}
+
+
+@keyframes test2
+{
+    0%  {top: 0px;} 
+    25% {top: -10px;}    
+    50% {top: 0px}   
+    75% {top: 10px;} 
+    100% {top: 0px;} 
+}
+
+@keyframes color
+{
+    0%  {background-color: black;}  
+    50% {background-color: white;  }   
+    100% {background-color: black;}   
+}
+
+@keyframes color2
+{
+    0%  {color: blue;}  
+    50% {color: violet;  }   
+    100% {color: blue;}   
+}
+
+@keyframes marg
+{
+    0%  {margin: 1em;}  
+    50% {margin: 0em;}   
+    100% {margin: 1em;}   
+}
+
+
+header
+{
+    grid-column: 2 span;
+    background-color: rgb(16, 16, 21);
+    text-align: center;
+    color: white;
+}
+
+
+
+
+aside
+{
+    grid-row: 2 span;
+    background-color: rgb(16, 16, 21);
+    text-align: center;
+}
+.pris
+{
+    border: rgb(255, 0, 162) 1px solid;
+    background-color: rgb(16, 16, 21);
+    margin: 0.5em;
+    padding: 1em;
+}   
+.pris .titel
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+section#sidebar
+{
+    grid-row: 1 span;
+    background-color: rgb(16, 16, 21);
+}
+
+
+
+
+nav
+{
+    border: rgb(255, 0, 162) 1px solid;
+    background-color: rgb(16, 16, 21);
+    margin: 0.5em;
+    padding: 1em;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+nav.horizontal
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+}
+
+
+nav.horizontal h1
+{
+    
+}
+
+nav a 
+{
+    background-color: black;
+    padding: 1em;
+    margin: 1em;
+    text-decoration: 0;
+    color: white;
+    border-radius: 0.25em;
+}
+
+nav.vertical a 
+{
+    display: block;
+}
+
+nav.horizontal a 
+{
+    display: inline-block;
+    border: 2px white solid;
+    border-bottom: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    border-end-end-radius: 0;
+    border-end-start-radius: 0;
+}
+
+nav a:hover
+{
+    animation: lighten-button 0.1s forwards 1;
+}
+
+nav a#current
+{
+    position: relative;
+    animation: bg 0.25s infinite, test2 0.1s infinite, test 0.1s infinite;
+}
+
+@keyframes lighten-button
+{
+    from {background-color: black;}
+    to {background-color: rgb(10, 10, 10);}
+}
+
+
+
+main
+{
+    background-color: white;
+    padding: 1em;
+    color: black;
+}
+
+
+
+
+footer
+{
+    grid-column: 3 span;
+    background-color: rgb(16, 16, 21);
+    text-align: center;
+}
+.big
+{
+    font-size: 2.5em;
+}
+
+img
+{
+    border: black 1px solid;
+    width: 150px;
+}

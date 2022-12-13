@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="public/css/style.css">
+    </head>
+    <body>
+        <form method="POST" action="send-mail.php" class="laxa">
+            <h1>Skick läxa</h1>
+            <fieldset>
+                <legend>Ämne</legend>
+                <input type="text" name="amne" id="" required>
+            </fieldset>
+            <fieldset>
+                <legend>Viktighetsgrad</legend>
+                <input type="radio" name="viktighet" name="superviktig" value="superviktig" required>superviktig<br>
+                <input type="radio" name="viktighet" name="viktig" value="viktig" required>viktig <br>
+                <input type="radio" name="viktighet" name="akut" value="akut" required>akut <br>
+            </fieldset>
+            <fieldset>
+                <legend>Läxa</legend>
+                <textarea name="laxa" id="" cols="30" rows="10" required></textarea>
+            </fieldset>
+            <button type="submit" name="submit" value="laxa">Skicka</button>
+        </form>
+
+        <form method="POST" action="send-mail.php" class="undersokning">
+            <h1>Undersökning</h1>
+            <fieldset>
+                <legend>Skriv något</legend>
+                <textarea name="text" id="" cols="30" rows="10" required></textarea>
+            </fieldset>
+            <button type="submit">Skicka</button>
+        </form>
+        
+        <form method="POST" action="send-mail.php" class="quiz">
+            <h1>Quiz</h1>
+            <fieldset>
+                <legend>Frågor</legend>
+                <label for="">Hur gamal är du?</label><br>
+                <div id="ages">
+
+                </div>
+                <br>
+
+                <label for="">Vad heter du?</label><br>
+                <p href="" id="namn-har">Alex</p>
+                <input name="namn" id="namn-in" type="hidden"></input>
+                <button onclick="t()" type="button">Jag heter något annat</button>
+
+                <label for="">Vad är dit telefon numer?</label>
+                <input type="range" name="telefon" oninput="tel()" id="telefon-in" min="0" max="9999999999">
+                <p id="tel-out">0000000000</p>
+
+                <br>
+                <span class="thing">
+                    <input type="checkbox" name="ar-dalig" id="">
+                    Uplever du dena sidan dålig?
+                </span>
+
+            </fieldset>
+            <button type="submit" class="skicka">Skicka</button>
+        </form>
+
+    </body>
+
+    <script>
+
+        let names = [
+        "Emma",
+"Julia",
+"Elin",
+"Amanda",
+"Hanna",
+"Linnéa",
+"Matilda",
+"Wilma",
+"Moa",
+"Ida",
+"Johanna",
+"Sara",
+"Felicia",
+"Emelie",
+"Josefine",
+"Frida",
+"Sofia",
+"Ebba",
+"Rebecka",
+"Anna",
+"Klara",
+"Maja",
+"Lovisa",
+"Nathalie",
+"Malin",
+"Sandra",
+"Fanny",
+"Alice",
+"Isabelle",
+"Lisa",
+"Ellen",
+"Olivia",
+"Linn",
+"Jennifer",
+"Mikaela",
+"Victoria",
+"Louise",
+"Evelina",
+"Lina",
+"Emilia",
+"Alexandra",
+"Alva",
+"Kajsa",
+"Madeleine",
+"Jenny",
+"Sofie",
+"Sanna",
+"Caroline",
+"Filippa",
+"Alicia",
+"Maria",
+"Isabella",
+"Erika",
+"Elsa",
+"Agnes",
+"Nellie",
+"Jessica",
+"Linda",
+"Ella",
+"Cornelia",
+"Emmy",
+"Carolina",
+"Stina",
+"Therese",
+"Saga",
+"Nora",
+"Tilda",
+"Jasmine",
+"Ellinor",
+"Ronja",
+"Annie",
+"Cecilia",
+"Jonna",
+"Alma",
+"Gabriella",
+"Michelle",
+"Nicole",
+"Elvira",
+"Tove",
+"My",
+"Angelica",
+"Vendela",
+"Andrea",
+"Daniella",
+"Elina",
+"Karin",
+"Kristina",
+"Astrid",
+"Cassandra",
+"Tova",
+"Molly",
+"Sabina",
+"Beatrice",
+"Denise",
+"Patricia",
+"Paulina",
+"Miranda",
+"Thea",
+"Nina",
+"Melissa",
+"Emily",
+"Filip",
+"Erik",
+"Oscar",
+"Simon",
+"Anton",
+"Alexander",
+"Viktor",
+"Jonathan",
+"Marcus",
+"Jacob",
+"William",
+"Emil",
+"Daniel",
+"Lukas",
+"Linus",
+"David",
+"Jesper",
+"Gustav",
+"Johan",
+"Albin",
+"Carl",
+"Sebastian",
+"Adam",
+"Rasmus",
+"Andreas",
+"Oliver",
+"Axel",
+"Kevin",
+"Isak",
+"Martin",
+"Felix",
+"Samuel",
+"Robin",
+"Tobias",
+"Pontus",
+"Christoffer",
+"Mattias",
+"Ludvig",
+"Fredrik",
+"Hampus",
+"Joel",
+"Elias",
+"Niklas",
+"Max",
+"Joakim",
+"Jonas",
+"Dennis",
+"Johannes",
+"Hugo",
+"Gabriel",
+"Tim",
+"Henrik",
+"Edvin",
+"Casper",
+"Mikael",
+"Alex",
+"Arvid",
+"John",
+"Benjamin",
+"Christian",
+"Rickard",
+"André",
+"Olle",
+"Patrik",
+"Adrian",
+"Mohammed",
+"Nils",
+"Fabian",
+"Hannes",
+"Theodor",
+"Alfred",
+"Josef",
+"Kim",
+"Leo",
+"Wilhelm",
+"Måns",
+"Robert",
+"Jimmy",
+"Ali",
+"Petter",
+"Tom",
+"Thomas",
+"August",
+"Olof",
+"Love",
+"Eddie",
+"Vincent",
+"Kalle",
+"Ahmed",
+"Magnus",
+"Jens",
+"Elliot",
+"Noah",
+"Per",
+"Jack",
+"Anders",
+"Björn",
+"Douglas",
+"Emanuel",
+"Julius",
+        ]
+        document.getElementById("namn-in").value = "alex"
+        function t() {
+            let e = document.getElementById("namn-har")
+            let c = names[Math.floor(Math.random()*names.length)]
+            e.innerHTML = c
+            let i = document.getElementById("namn-in")
+            i.value = c
+        }
+
+        function tel() {
+            let e = document.getElementById("telefon-in")
+            let o = document.getElementById("tel-out")
+        
+            let s = e.value
+            while(10 - s.length > 0) {
+                s = "0" + s
+            }
+
+            o.innerHTML = s
+        }
+
+        let a = document.getElementById("ages")
+        for (var i = 0; i < 126; i++) {
+            a.innerHTML += `<input type="radio" name="alder" value="a${i}">${i}<br>`
+        }
+    </script>
+</html>

@@ -13,7 +13,8 @@
     --cyan: #23967F;
     --white: #FBFFFE;
     --gray: #80727B;
-    --black: #1B1B1E;
+    --dark: #1B1B1E;
+    --black: #0F0F0A;
     --red: #96031A;
 }
 
@@ -21,8 +22,12 @@
 body
 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--cyan);
-    
+    background-image: linear-gradient(135deg, var(--red), purple);
+    color: white;
+}
+
+.d-block {
+    display: block;
 }
 
 .container
@@ -31,13 +36,12 @@ body
     width: 60%;
     margin: auto;
     border-radius: 0.5em;
-    margin-top: 4em;
+    margin: 2em auto;
 
-    background-color: var(--black);
+    background-color: var(--dark);
     color: var(--white);
-
+    box-shadow: 0px 0px 0.5em 0em black;
 }
-
 
 
 .title
@@ -55,7 +59,8 @@ body
     min-width: max-content;
     background-color: var(--gray);
     padding: 0.5em 1em;
-    border-radius: 0.1em;
+    border-radius: 0.25em;
+    border-color: var(--white);
     color: var(--black);
     font-size: large;
     text-decoration: none;
@@ -85,6 +90,16 @@ body
     animation: darken-button-red 0.15s forwards 1;
 }
 
+.button.button-cyan
+{
+    background-color: var(--cyan);
+    color: var(--white);
+}
+.button.button-cyan:hover
+{
+    animation: darken-button-red 0.15s forwards 1;
+}
+
 @keyframes darken-button
 {
     form {background-color: var(--gray); color: var(--black); outline: 0; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;}
@@ -107,10 +122,25 @@ body
 
 .showcase
 {
+    background-color: var(--dark);
+    padding: 1em;
+    border-radius: 1em;
     width: 50%;
     margin: auto;
     margin-bottom: 3em;
-    margin-top: 3em;
+    box-shadow: 0px 0px 0.5em 0em black;
+}
+
+.showcase h1
+{
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.showcase.fit
+{
+    width: fit-content;
 }
 
 .showcase-content
@@ -123,14 +153,84 @@ body
 .showcase-content p
 {
     width:min-content;
-    min-width: 20%;
+    min-width: 10em;
 }
 
 .showcase-content img
 {
-    width: 20em;
+    width: 15em;
     max-width: 100%;
+    border-radius: 1em;
+    box-shadow: 0px 0px 0.5em 0em black;
 }
+
+.showcase .button
+{
+    box-shadow: 0px 0px 0.5em 0em black;
+}
+
+
+.slider
+{
+    color: var(--white);
+    height: 32em;
+    margin-bottom: 5em;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.slide#current
+{
+    position: relative;
+    display: block;
+    margin: auto;
+    animation: slide-slide-in 1s forwards 1;
+}
+
+.slide:not(#current)
+{
+    display: none;
+}
+
+@keyframes slide-slide-in
+{
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+.next
+{
+    
+    width: 8em;
+    box-shadow: 0px 0px 0.5em 0em black;
+}
+
+.prev
+{
+    width: 8em;
+    box-shadow: 0px 0px 0.5em 0em black;
+}
+
+.slider-buttons
+{
+    display: flex;
+    gap: 2em;
+    
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.slider-buttons .button
+{
+    height: 3em;
+    border: 0;
+}
+
+
+
+
+
+
 
 
 /*
