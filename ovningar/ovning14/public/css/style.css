@@ -1,0 +1,243 @@
+body {
+    background-color: black;
+}
+
+.structure {
+    width: 80%;    
+    margin: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto ;
+}
+
+.dude {
+    margin: 5px;
+    border: purple 5px solid;
+    aspect-ratio: 1;
+    box-shadow: 0em 0em 1em 0em white;
+}
+.dude p {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 3em;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.r {
+    background-color: red;
+}
+.g {
+    background-color: green;
+}
+.b {
+    background-color: blue;
+}
+
+
+
+
+
+@media screen and (min-width: 850px) {
+    .structure {
+        perspective: 800px;
+        animation: rotate-structure 10s infinite linear;
+        margin-top: 8em;
+    }
+
+    @keyframes rotate-structure {
+        0% {
+            perspective: 3000px;
+        }
+        50% {
+            perspective: 100px;
+        }
+        100% {
+            perspective: 3000px;
+        }
+    }
+    @keyframes rotate-structure2 {
+        0% {
+            perspective: 1000px;
+        }
+        50% {
+            perspective: 500px;
+        }
+        100% {
+            perspective: 1000px;
+        }
+    }
+
+    @keyframes rotate-main {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+
+    @keyframes dude-b {
+        from {
+            transform: rotateY(360deg)
+        }
+        to {
+            transform: rotateY(0deg)
+        }
+    }
+
+    .b {
+        animation: dude-b 2s infinite linear;
+    }
+    
+    main {
+        transform: rotateY(45deg);
+        animation: rotate-main 10s infinite linear;
+    }
+    div.con {
+        animation: rotate-structure 2s infinite linear;
+    }
+
+    .structure {
+        perspective: 800px;
+        animation: rotate-structure 10s infinite linear;
+    }
+
+    @keyframes rotate-structure {
+        0% {
+            perspective: 1000px;
+        }
+        50% {
+            perspective: 500px;
+        }
+        100% {
+            perspective: 1000px;
+        }
+    }
+    @keyframes rotate-structure2 {
+        0% {
+            perspective: 1000px;
+        }
+        50% {
+            perspective: 500px;
+        }
+        100% {
+            perspective: 1000px;
+        }
+    }
+
+    @keyframes rotate-main {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+
+    @keyframes dude-b {
+        from {
+            transform: rotateY(360deg)
+        }
+        to {
+            transform: rotateY(0deg)
+        }
+    }
+
+    .b {
+        animation: dude-b 2s infinite linear;
+    }
+    
+    main {
+        transform: rotateY(45deg);
+        animation: rotate-main 10s infinite linear;
+    }
+    div.con {
+        animation: rotate-structure 2s infinite linear;
+    }
+
+}
+@media screen and (min-width: 650px) and (max-width: 849px){
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    body {
+        font-family: cursive;
+    }
+
+
+    .structure {
+        perspective: 800px;
+        animation: rotate-structure 10s infinite linear;
+    }
+
+    @keyframes rotate-structure {
+        0% {
+            perspective: 1000px;
+        }
+        50% {
+            perspective: 500px;
+        }
+        100% {
+            perspective: 1000px;
+        }
+    }
+    @keyframes rotate-structure2 {
+        0% {
+            perspective: 1000px;
+        }
+        50% {
+            perspective: 500px;
+        }
+        100% {
+            perspective: 1000px;
+        }
+    }
+
+    @keyframes rotate-main {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+
+    @keyframes dude-b {
+        from {
+            transform: rotateY(360deg)
+        }
+        to {
+            transform: rotateY(0deg)
+        }
+    }
+
+    .b {
+        animation: dude-b 2s infinite linear;
+    }
+    
+    main {
+        transform: rotateY(45deg);
+        animation: rotate-main 10s infinite linear;
+    }
+    div.con {
+        animation: rotate-structure 2s infinite linear;
+    }
+}
+@media screen and (max-width: 649px){
+    body {
+        font-family: sans-serif;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    p {
+        font-size: 15em !important;
+    }
+}    
