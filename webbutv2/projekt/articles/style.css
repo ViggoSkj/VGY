@@ -1,0 +1,20 @@
+#array, #sorting {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    margin: 1rem;
+    gap: 1rem;
+    background-color: #00F;
+    min-height: 100px;
+}
+
+#controll-panel {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#array > p, #sorting > p {
+    background-color: rgb(0, 0, 0);
+    height: fit-content;
+}

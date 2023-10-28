@@ -1,0 +1,44 @@
+body {
+    background-image: url("./b.jpg");
+    background-size: 10% 10%;
+    color: white;
+    font-family: "Comic Sans MS";
+    animation: background-animation forwards linear infinite 5s;
+}
+
+@keyframes background-animation {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+input {
+    font: inherit;
+}
+
+body > div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-block: 1rem;
+    background-color: rgba(0, 0, 0, 0.724);
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: inherit;
+}
+
+script {
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+
+script::before {
+    content: "Javascript";
+}

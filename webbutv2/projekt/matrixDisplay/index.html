@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="matrixDisplay.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="500" height="500" id="myCanvas"></canvas>
+    <p id="fps"></p>
+    <script>
+        const fpsCounter = document.getElementById("fps")
+        const myCanvas = document.getElementById("myCanvas")
+        const myMatrixDisplay = MatrixDisplay()
+        //const matrix = Array(25).fill(0).map((x, i) => Array(25).fill(0).map((x, j) => (i%2 !== j%2 ) ? [(i%2)*255, (j%2)*255, j*i] : [0, 0, 0] ))
+        myMatrixDisplay.setCanvas(myCanvas)
+        
+        let prevTime = Date.now()
+        setInterval(() => {
+            const dt = Date.now() - prevTime
+            prevTime = Date.now()
+            const matrix = Array(100).fill(0).map((x, i) => Array(100).fill(0).map((x, j) => [255, (255/100)*((i+prevTime/100)%100), (255/100)*j] ))
+            myMatrixDisplay.setMatrix(matrix)
+            myMatrixDisplay.draw()
+            
+            fpsCounter.innerText = Math.floor(1000/dt)
+        }, 1000/60)
+    </script>
+</body>
+</html>

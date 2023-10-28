@@ -1,0 +1,128 @@
+:root {
+    --blue: #aaf
+}
+
+body {
+    background-color: black;
+    color: #0F0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.middle {
+    text-align: center;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    gap: 2rem;
+}
+
+.horizontal-list {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+a {
+    color: rgb(0, 255, 0);
+    padding: 0.5em;
+}
+
+a:focus,
+a:hover {
+    background-color: rgb(255, 0, 255);
+    color: black;
+    font-weight: bold;
+}
+
+/* ================== Universal ====================== */
+
+.button {
+    background-color: transparent;
+    border: 2px #0F0 solid;
+    color: #0F0;
+    padding: 0.5rem 1rem;
+}
+
+.button:hover {
+    animation: button-hover-anim 1s infinite forwards linear;
+}
+
+@keyframes button-hover-anim {
+    from {
+        border: 2px #0F0 dashed;
+    }
+
+    to {
+        border: 2px #0F0 dotted;
+    }
+}
+
+.text-input {
+    background-color: transparent;
+    border: 2px #0F0 solid;
+    color: #0F0;
+    padding: 0.5rem 1rem;
+}
+
+.text-input:focus {
+    border: 2px #0F0 dotted;
+    outline: transparent;
+}
+
+/* ================== Command Line ====================== */
+
+#command-line {
+    position: fixed;
+    font-size: 0.75rem;
+    margin: 0;
+    padding: 0.5rem;
+    font-weight: bold;
+    max-width: 300px;
+    width: 300px;
+    line-break: anywhere;
+    bottom: 0;
+    right: 0;
+    color: #0F0;
+    border: 1px #0F0 solid;
+    border-bottom: none;
+    border-right: none;
+    background-color: black;
+    border-top-left-radius: 0.5rem;
+}
+
+#command-line p {
+    margin: 0;
+}
+
+#command-line input {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font: inherit;
+    width: 100%;
+}
+
+#command-line input:focus {
+    outline: transparent;
+}
+
+/* ================== webbutveckling 2 sida ====================== */
+#webbutveckling-2 {
+    margin-left: 10rem;
+}
+
+.path-opener {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F0;
+    width: 100px;
+    height: 100px;
+}
+
+.path-opener svg {
+    width: 30px;
+    height: 30px;
+}

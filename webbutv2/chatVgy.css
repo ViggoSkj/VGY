@@ -1,0 +1,21 @@
+#chat-vgy {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: auto;
+    width: 200px;
+    height: 300px;
+    background-color: white;
+}
+
+#chat-vgy #chat-messages {
+    background-color: gray;
+}
+
+#chat-vgy #chat-messages p {
+    height: fit-content;
+    margin: 0.1rem;
+    color: black;
+}
+#chat-vgy #chat-messages p[data-you] {
+    text-align: right;
+}

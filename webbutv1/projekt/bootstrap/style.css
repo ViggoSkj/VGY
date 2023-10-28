@@ -1,0 +1,14 @@
+body {
+    display: grid;
+    grid-template-columns: 20rem auto;
+    grid-template-rows: max-content auto;
+    height: 100vh;
+}
+
+aside {
+    height: 100%;
+}
+
+header {
+    grid-column: 2 span;
+}

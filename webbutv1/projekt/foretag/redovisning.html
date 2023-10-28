@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: rgb(17, 17, 19);
+            color: white;
+        }
+
+
+        .colors {
+            background-color: rgb(56, 56, 56);
+            display: inline-flex;
+            padding: 1rem;
+        }
+
+        .color-display {
+            width: 2rem;
+            height: 2rem;
+            display: fle;
+        }
+
+        .c1 {
+            background-color: #2A9D8F;
+        }
+        .c2 {
+            background-color: #F9DEC9;
+        }
+        .c3 {
+            background-color: #A30B37;
+        }
+        .c4 {
+            background-color: #03254E;
+        }
+        .c5 {
+            background-color: #001427;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <h1>Cart systemet</h1>
+    <p>
+        Cart systemet ska vara ett system för att förvara vilka
+        varor en andvendare vill köpa. Det ska vara möjligt att
+        lägga till, tabort, och rensa den. Den ska förvara datan i
+        web storage.
+        <br>
+        <br>
+        först tänkte jag att structuren för att förvara skulle vara så här 
+        {      <br>
+&nbsp&nbsp&nbsp&nbsp            cartItemId: {      <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                id: aodnsadsad,      <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                productId: x,      <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                productCount: x,      <br>
+&nbsp&nbsp&nbsp&nbsp            }      <br>
+        }      <br>
+<br>
+        Men ångrade mig och ladde istället alla cartItems i en list istället för ett JSON object.
+        Gjorde det senare då vissa saker som att kolla ifall en produt redan finns i carten 
+        skulle kunna bli finare implementerat.
+    </p>
+
+    
+
+    <p>
+
+        Kan ej säga hur lång tid, då jag kanske gör saker utanför lektionerna.
+        Men detta är hur jag tänker jag ska göra saker
+
+        <ul>
+            <li>Navbar, footer och layout element</li>
+            <li>Butiken</li>
+            <li>Produktsidan</li>
+            <li>Cart funktion</li>
+            <li>Bäställning</li>
+            <li>Sedan andra sidor som FAQ och support</li>
+        </ul>
+    </p>
+
+    <h1>Logg</h1>
+
+    <ul>
+        <li>jag gjorde klart navbaren och ändrade it så den såg snygg ut</li>
+        <li>Gjorde en basc footer.</li>
+        <li>Skapade products.php för at definera produkterna</li>
+        <li>Började med shopens, och hur den ser ut</li>
+        <li>Började skapa produkt sidan</li>
+        <li>Gjorde om  navbaren</li>
+        <li>Började på cart system</li>
+        <li>Började implementera betalnings menyn. Gjorde frontend och började implementera php sidan
+            där datan kommer att skickas och valideras, och sedan skickas till mig.
+        </li>
+
+        <li>Jag implementerade faq och about menyn samt fixade några resonsiva buggar då sidan blev för bred. det var att grid elementet var tillräkligt lite men grdden var större så jag satte grid-template-column till 100%;</li>
+
+        <li>Jag fixade mail saken, jag gjorde navbaren snyggare och med animation, fixade flimrande när man ökar produkt ängd. Ändrade färgeran på sidan.</li>
+        <li>Jag fixade faq genom att göra en pil för att öpna istället för täkan samnt en knap för acecibility. Jag fixade en cart page bug som gjorde att fler av en ruta upkom. Splitrade även abou och support page.</li>
+    </ul>
+
+    <h1>Notes</h1>
+    <p>
+        I buttiken för mobilen, istället för att skrolla horizontelt byte jag till verticat då det kändes mer naturligt
+    </p>
+    <p>
+        När jag gjorde navbaren var jag lite lat, så vissa saker var gjorda lite konstigt. Men jag gorde om det senarepå ett bättre set
+    </p>
+
+    <h2>Redovisnings text</h2>
+    <h3>Beskriv i stora drag hur du tänkte vid planeringen av din sajt</h3>
+    <p>
+        Jag ville ha lite mörka blåa färge som färg tema, och jag ville ha en kundvang för att ha lite realism. Tänkte ha de nödvendiga genom att ha faq, product, produkt browser, kundvangan och landing page.
+    </p>
+    <h2>Hur gick det vid genomförandet? Fick du problem? Fick du ändra om, ta bort något?</h2>
+    <p>
+        Det gick bra skulle jag säga, en sak jag fick ändra var färgerna då de var fulla samt flickrade kundvagn itemserna då man ökade och minskade dem, där behövde jag också skriva om koden lite,
+    </p>
+    <h2>Har du några extra finesser eller annat bra/roligt/smart?</h2>
+    <p>
+        Kundvagnen och lite animationer
+    </p>
+    <h2>Beskriv hur du testat funktionaliteten på dina webbsidor.</h2>
+    <p>
+        Jag har testat genom att gå igenom sidan som en andvendare samt för javaskripten andvend consolen litegran. För responsive web har jag mest andvendt dev tools men också ibland min riktiga mobil.
+    </p>
+    <h2>Vad har du gjort med avseende på webbtillgänglighet, användbarhet och läsbarhet.</h2>
+    <p>
+        Anvenda rät taggar, bra kontrast och alt på bilder.
+    </p>
+    <h2>Skriv något om hur du upplevt projektet, lätt/svårt, kul/tråkigt, något annat?
+        Beskriv gärna lite med egna ord.</h2>
+    <p>
+        Det var ganska lät skulle jag säga. Det är dock väldigt iriterande att behöva andvenda labservern då detär ganska manuelt samt verifierings saken.
+    </p>
+    <h2>Vad tyckte du om projektet?</h2>
+    <p>
+        Det var ok
+    </p>
+    <h2>Vad tyckte du om projektinstruktionerna?</h2>
+    <p>
+        de var tillräkligt bra för att förstå
+    </p>
+    <h2>Har du tips på hur projektet kan göras bättre?</h2>
+    <p>nej</p>
+    <h2>Övriga synpunkter!</h2>
+    <p>ingas</p>
+</body>
+</html>

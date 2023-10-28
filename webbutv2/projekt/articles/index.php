@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <section class="middle">
-        <div class="horizontal-list">
-            <a href="webbutv1/">Webbutvekling 1</a>
-            <a href="webbutv2/">Webbutvekling 2</a>
-        </div>
-    </section>
+    <?php include("../../commandLine.php"); ?>
+
+    <script src="articles.js"></script>
+    <script src="../../commandLine.js"></script>
+    <script>
+        
+    </script>
 </body>
 
 </html>
