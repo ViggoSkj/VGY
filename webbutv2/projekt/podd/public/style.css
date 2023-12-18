@@ -1,0 +1,108 @@
+body {
+    background-color: #36373C;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+button {
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+a {
+    color: inherit;
+}
+
+.title {
+    text-align: center;
+}
+
+
+
+.layout {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+#manuscript {
+    position: fixed;
+    display: none;
+    max-width: 90%;
+    max-height: 80vh;
+    width: 40rem;
+    background-color: white;
+    overflow-y: scroll;
+    padding: 1rem;
+    color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+.audio-player {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+#play-button {
+    position: relative;
+    width: 128px;
+    height: 128px;
+}
+
+#play-button > * {
+    position: absolute;
+}
+
+#play-button-paused {
+    display: none;
+}
+
+#play-button[paused] #play-button-playing {
+    display: none;
+}
+
+#play-button[paused] #play-button-paused {
+    display: block;
+}
+
+.icon-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.info {
+    display: flex;
+    align-items: center;
+    padding-inline: 2rem;
+}
+
+.info img {
+    max-width: 50%;
+}
+
+.info p {
+    max-width: 60rem;
+}
+
+@media screen and (max-width: 850px) {
+    .info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
