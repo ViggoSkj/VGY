@@ -37,6 +37,10 @@ function AudioPlayer() {
         audioElement.currentTime += time
     }
 
+    const setCurrentDuration = (time) => {
+        audioElement.currentTime = time
+    }
+
     return {
         get gotAudioContext() { return !!audioContext },
         get gotTrack() { return !!track },
@@ -50,5 +54,6 @@ function AudioPlayer() {
         loadTrack,
         togglePause,
         traverseAudio,
+        setCurrentDuration,
     }
 }

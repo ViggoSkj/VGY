@@ -84,6 +84,33 @@ a {
     gap: 1rem;
 }
 
+.icon-row > * {
+    padding: 0;
+    font-size: 22px;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider-bar {
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    max-width: 80vw;
+    width: 500px;
+    height: 5px;
+}
+
+.slider-handle {
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
 
 
 .info {
